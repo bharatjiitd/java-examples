@@ -1,9 +1,9 @@
 package guava.collection;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import java.util.Set;
@@ -142,7 +142,7 @@ public class TestGuavaLibrary {
     
     racePositionByName.forcePut("Ramesh", 4);
     
-    assertEquals(racePositionByName.get("Ramesh"), 4);
+    assertEquals(4, racePositionByName.get("Ramesh").intValue());
     
     assertNull(racePositionByName.get("Suresh"));
     
